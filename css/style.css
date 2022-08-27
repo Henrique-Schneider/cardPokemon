@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #eff3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  border: 2px solid;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80vh;
+}
+/* inicio form */
+.container-form {
+  width: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 30%;
+  border: 5px solid;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+.form-control i {
+  position: absolute;
+  top: 48px;
+  right: 20px;
+  visibility: hidden;
+}
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+#form #botao {
+  margin-bottom: 5px;
+  background-color: rgb(61, 61, 170);
+  border: 2px solid blue;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control.success i.fa-check-circle {
+  color: green;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: red;
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: visible;
+  color: red;
+}
+
+/* fim form */
+/* card */
+.container {
+  width: 350px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 60%;
+  border: 5px solid;
+}
+
+#card {
+  position: relative;
+  width: 100%;
+  padding: 30px 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: 2px solid red;
+}
+#card img {
+  display: block;
+  width: 180px;
+  max-height: 200px;
+  position: relative;
+  margin: 20px auto;
+}
+.hp {
+  width: 80px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  margin-left: auto;
+  font-weight: 400;
+}
+.poke-name {
+  text-align: center;
+  font-weight: 600;
+}
+.types {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 40px 0;
+}
+.hp span,
+.types span {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+.types span {
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.stats p {
+  color: #404060;
+}
+#btn {
+  display: block;
+  padding: 15px 60px;
+  font-size: 18px;
+  background-color: #101010;
+  color: #ffffff;
+  position: relative;
+  margin: 30px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+#card-descricao{
+  display: block;
+  position: relative;
+  margin: 20px auto;
+  width: 100%;
+  border:2px  solid;
+}

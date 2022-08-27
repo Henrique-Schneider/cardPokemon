@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Card Generator</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <main class="main-container">
+        <!-- formulario -->
+        <div class="container-form">
+            <div class="header">
+                <h2>crie seu card</h2>
+            </div>
+            <div class="form-control">
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo" placeholder="Digite o nome do titulo..."/>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+              </div>
+      
+              <div class="form-control error">
+                <label for="descrição">Descrição</label>
+                <input type="text" id="descrição" placeholder="Descrição"/>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+              </div>
+      
+              <div class="form-control success">
+                <label for="urlImage">URL</label>
+                <input type="text" id="urlImage" placeholder="Cole a URL da imagem aqui..."/>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+              </div>
+              <button id="btn">Generate</button>
+            </form>
+        </div>
+        <!-- fim formulario -->
+    <div class="container">
+      <div id="card">
+        
+      </div>
+      
+    </div>
+    
+</main>
+    <!-- Script -->
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
