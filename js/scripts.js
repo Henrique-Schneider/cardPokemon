@@ -22,7 +22,7 @@ const typeColor = {
   const titulo = document.getElementById("titulo")
   const descricao = document.getElementById("descricao")
   const urlImage =document.getElementById("urlImage")
-  
+    
  
 
   let getPokeData = () => {
@@ -44,10 +44,11 @@ const typeColor = {
     const hp = data.stats[0].base_stat;
     const imgSrc = urlImage.value;
     const pokeName = titulo.value.toUpperCase();
+    const cardDescricao = descricao.value;
     const statAttack = data.stats[1].base_stat;
     const statDefense = data.stats[2].base_stat;
     const statSpeed = data.stats[5].base_stat;
-    
+   
 
     // Set themeColor based on pokemon type
     const themeColor = typeColor[data.types[0].type.name];
@@ -77,8 +78,9 @@ const typeColor = {
             </div>
           </div>
           
-          <div>
-          
+          <div id="card-descricao">
+          <p> ${cardDescricao} </p>
+
         </div>
           </div>
     `;

@@ -187,7 +187,11 @@ body {
 #card-descricao{
   display: block;
   position: relative;
-  margin: 20px auto;
+  margin: auto;
   width: 100%;
+  min-height: 30px;
+  overflow-wrap: break-word;
+  word-wrap:break-word;
+  word-break: break-all;
   border:2px  solid;
 }
