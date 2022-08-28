@@ -22,8 +22,9 @@ const typeColor = {
   const titulo = document.getElementById("titulo")
   const descricao = document.getElementById("descricao")
   const urlImage =document.getElementById("urlImage")
-    
+  const select = document.getElementById("select")  
  
+  
 
   let getPokeData = () => {
     // Generate a random number between 1 and 150
@@ -49,7 +50,20 @@ const typeColor = {
     const statDefense = data.stats[2].base_stat;
     const statSpeed = data.stats[5].base_stat;
    
+    // OPÇOES
+    tipos.innerHTML =`
+                  <option value="bug">veneno</option>
+                  <option value="">veneno</option>
+                  <option value="">veneno</option>
+                  <option value="">veneno</option>
+                  <option value="">veneno</option>
+                  <option value="">veneno</option>
+                  <option value="">veneno</option>
+                  <option value="">veneno</option>
+                </select>
+    `
 
+    
     // Set themeColor based on pokemon type
     const themeColor = typeColor[data.types[0].type.name];
     console.log(themeColor);
